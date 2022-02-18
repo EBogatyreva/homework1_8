@@ -96,7 +96,6 @@ public class Main {
         String sorted = new String(chars);
         return sorted;
     }
-
     public static void findRepetition(String repetition) {
         int sLength = repetition.length();
         char[] c = repetition.toCharArray();
