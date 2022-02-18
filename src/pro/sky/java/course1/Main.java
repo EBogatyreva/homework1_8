@@ -57,7 +57,9 @@ public class Main {
         String a;
         if (typeOfSystem == 0) {
             a = "IOS";
-        } else a = "Android";
+        } else {
+            a = "Android";
+        }
         return a;
     }
 
@@ -109,7 +111,7 @@ public class Main {
 
     //Задание 5.
     public static void viseVersa(char[] reverseFullName) {
-        int l = reverseFullName.length-1;
+        int l = reverseFullName.length - 1;
         for (int i = 0; i < l; i++, l--) {
             char c = reverseFullName[i];
             reverseFullName[i] = reverseFullName[l];
