@@ -1,9 +1,8 @@
 package pro.sky.java.course1;
-
 import java.time.LocalDate;
 import java.util.Arrays;
-
 public class Main {
+
     public static void main(String[] args) {
         //Задание 1.
         int currentYear = LocalDate.now().getYear();
@@ -57,9 +56,7 @@ public class Main {
         String a;
         if (typeOfSystem == 0) {
             a = "IOS";
-        } else {
-            a = "Android";
-        }
+        } else {a = "Android";}
         return a;
     }
 
@@ -96,6 +93,7 @@ public class Main {
         String sorted = new String(chars);
         return sorted;
     }
+
     public static void findRepetition(String repetition) {
         int sLength = repetition.length();
         char[] c = repetition.toCharArray();
@@ -110,7 +108,7 @@ public class Main {
 
     //Задание 5.
     public static void viseVersa(char[] reverseFullName) {
-        int l = reverseFullName.length - 1;
+        int l = reverseFullName.length-1;
         for (int i = 0; i < l; i++, l--) {
             char c = reverseFullName[i];
             reverseFullName[i] = reverseFullName[l];
@@ -118,4 +116,4 @@ public class Main {
         }
         System.out.println(reverseFullName);
     }
-}
+    }
